@@ -1,0 +1,30 @@
+.upload-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .upload-container input {
+    margin: 10px 0;
+  }
+  
+  .upload-container button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #0B8456; /* Gourmex Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .upload-container button:hover {
+    background-color: #085e3a;
+  }
+  
+

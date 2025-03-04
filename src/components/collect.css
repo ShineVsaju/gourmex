@@ -1,0 +1,122 @@
+/* Overall form container */
+/* Collect.js styles */
+
+.collect-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-box label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+  border-color: #e48f0f; /* Gourmex green */
+  outline: none;
+}
+
+.input-box select {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #e48f0f; /* Gourmex green */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #000000fe; /* Darker Gourmex green */
+}
+
+.result {
+  margin-top: 30px;
+  background-color: #e6f4e1;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #d0e9c6;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.input-box select,
+.input-box input {
+  transition: all 0.3s ease-in-out;
+}
+
+.input-box input:focus {
+  transform: scale(1.03);
+}
+
+.input-box select:focus {
+  transform: scale(1.03);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .collect-form-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+/* File Upload Preview */
+.file-preview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+  

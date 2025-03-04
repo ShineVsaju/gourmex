@@ -1,0 +1,26 @@
+%{
+#include <stdio.h>
+#include <ctype.h>
+%}
+
+/* Regular expressions for tokens */
+%%
+
+/convertme/ {           // Matches the substring "convertme" in input
+    int i;
+    for (i = 0; yytext[i] != '\0'; i++) {
+        yytext[i] = toupper(yytext[i]);   // Convert each character to uppercase
+    }
+    printf("%s", yytext);                 // Print the modified substring
+}
+
+.       { printf("%s", yytext); }         // For any other character, print as-is
+
+%%
+
+int main() {
+    yylex();                              // Start lexical analysis
+    return 0;
+}
+
+int yywrap() { return 1; }                // End of input

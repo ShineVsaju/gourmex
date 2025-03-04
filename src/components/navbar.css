@@ -1,0 +1,44 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    padding: 20px;
+  }
+  .navbar-menu-container {
+    display: none;
+  }
+  .navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  .navbar-cart-icon {
+    font-size: 1.15rem;
+  }
+  .primary-button:hover {
+    background-color: rgba(10, 207, 86, 0.881);
+  }
+  .navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .clerk-component{
+    display: inline-block;
+    margin-bottom: -10px;
+  }
